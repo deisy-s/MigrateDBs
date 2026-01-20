@@ -16,20 +16,20 @@
 
 ## Description
 <p>
-  This application, created using C#, allows a user to connect to several Database Management Systems (DBMS), where they can view the databases, tables, and views that they 
-  have access to. It is possible to execute queries on these different DBMS; you must click on the node of the connection you wish to utilize so the query is run on the 
-  correct connection. Additionally, the application allows migrating a database from one DBMS to another. The C# library "ReglasDeNegocio" contains classes with the various 
-  queries or conversions necessary for each different DBMS. The connection to each DBMS is added by selecting the server, the user's login information, and database path in 
-  the case of Firebase connections. It doesn't necessarily have to be a localhost connection, it can be a connection on a local Wi-Fi network, although the loading time is 
-  slower than a localhost connection.
+  This application, created using C#, allows a user to connect to several Database Management Systems (DBMS), where they can view the databases, tables, views, and stored 
+  procedures that they have access to. It is possible to execute queries on these different DBMS; you must click on the node of the connection you wish to utilize so the 
+  query is run on the correct connection. Additionally, the application allows migrating a database from one DBMS to another. The C# library "ReglasDeNegocio" contains 
+  classes with the various queries or conversions necessary for each different DBMS. The connection to each DBMS is added by selecting the server, the user's login 
+  information, and database path in the case of Firebase connections. It doesn't necessarily have to be a localhost connection, it can be a connection on a local Wi-Fi 
+  network, although the loading time is slower than a localhost connection.
 </p>
 
 ## Project Functionalities
 - Connect to several DBMS at the same time
 - Close the connection to a DBMS
 - Execute queries
-- Migrate database from one DBMS to another
-- View databases and their tables
+- Migrate a database from one DBMS to another
+- View databases with their tables, views, and stored procedures
 
 ## Technologies used
 - C#
