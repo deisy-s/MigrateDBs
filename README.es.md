@@ -17,11 +17,11 @@
 ## Descripción
 <p>
   Esta aplicación, creada utilizando C#, permite a un usuario conectarse a varios Sistemas Gestores de Bases de Datos (SGBD), donde pueden visualizar las bases de datos, 
-  tablas y vistas a las cuales tienen acceso. Es posible ejecutar queries en estos diversos SGBD, debe dar clic sobre el nodo de la conexión que desea utilizar para que el 
-  query se ejecute en la conexión correcta, además de migrar una base de datos de un SGBD a otro. La librería en C# "ReglasDeNegocio" contiene clases con los distintos 
-  queries o conversiones necesarias para cada SGBD distinto. La conexión a cada SGBD se agrega al selección el servidor, información de inicio de sesión del usuario y la 
-  ruta de la base de datos, en el caso de conexiones a Firebase. No necesariamente debe ser una conexión localhost, puede ser una conexión en una red Wi-Fi local, aunque el 
-  tiempo de carga es más lento que una conexión por localhost.
+  tablas, vistas y procedimientos almacenados a los cuales tienen acceso. Es posible ejecutar queries en estos diversos SGBD, debe dar clic sobre el nodo de la conexión que 
+  desea utilizar para que el query se ejecute en la conexión correcta, además de migrar una base de datos de un SGBD a otro. La librería en C# "ReglasDeNegocio" contiene 
+  clases con los distintos queries o conversiones necesarias para cada SGBD distinto. La conexión a cada SGBD se agrega al selección el servidor, información de inicio de 
+  sesión del usuario y la ruta de la base de datos, en el caso de conexiones a Firebase. No necesariamente debe ser una conexión localhost, puede ser una conexión en una red 
+  Wi-Fi local, aunque el tiempo de carga es más lento que una conexión por localhost.
 </p>
 
 ## Funcionalidades del proyecto
@@ -29,7 +29,7 @@
 - Cerrar la conexión a un SGBD
 - Ejecutar queries
 - Migrar bases de datos de un SGBD a otro
-- Obtener y ver bases de datos y sus tablas
+- Obtener y ver bases de datos junto con sus tablas, vistas y procedimientos almacenados
 
 ## Tecnologías utilizadas
 - C#
