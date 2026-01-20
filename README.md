@@ -16,7 +16,7 @@
 
 ## Description
 <p>
-  This application, created using C#, allows a user to connect to several Database Management Systems, where they can view the databases, tables and views that they have 
+  This application, created using C#, allows a user to connect to several Database Management Systems, where they can view the databases, tables, and views that they have 
   access to. It is possible to execute queries on these different DBMS, you must click on the node of the connection you wish to utilize so the query is run on the correct 
   connection, as well as migrate a database from one DBMS to another. The C# library "ReglasDeNegocio" contains classes with the different queries or conversions necessary 
   for each different DBMS. The connection to each DBMS is added by selecting the server, user log-in information, and route in the case of Firebase connections. It does not 
