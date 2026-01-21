@@ -28,7 +28,7 @@
 
 ### **Explorador de Esquemas**
 - **Explorador de Objetos:** Visualice una vista de árbol jerárquica de todas las bases de datos accesibles
-- **Inspección de Metadatos:** Explore en profundidad tablas, vistas y procedimientos almacenados específicos para cualquier conexión activa
+- **Inspección de Metadatos:** Explore en profundidad Tablas, Vistas y Procedimientos Almacenados específicos para cualquier conexión activa
 
 ### **Motor de Consultas y Migración**
 - **Ejecución Contextual:** Ejecute consultas seleccionando el nodo de conexión específico necesario en la interfaz de usuario
