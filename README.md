@@ -16,20 +16,24 @@
 
 ## Description
 <p>
-  This application, created using C#, allows a user to connect to several Database Management Systems (DBMS), where they can view the databases, tables, views, and stored 
-  procedures that they have access to. It is possible to execute queries on these different DBMS; you must click on the node of the connection you wish to utilize so the 
-  query is run on the correct connection. Additionally, the application allows migrating a database from one DBMS to another. The C# library "ReglasDeNegocio" contains 
-  classes with the various queries or conversions necessary for each different DBMS. The connection to each DBMS is added by selecting the server, the user's login 
-  information, and database path in the case of Firebase connections. It doesn't necessarily have to be a localhost connection, it can be a connection on a local Wi-Fi 
-  network, although the loading time is slower than a localhost connection.
+  This is a robust Database Management & Migration Tool developed in C#. It serves as a centralized hub for developers to interact with multiple Database Management Systems (DBMS) simultaneously. This application features a custom-built migration engine located in the "ReglasDeNegocio" library. This library handles the complex logic of translating queries and data types between different database engines (from Microsoft SQL Server to Firebird, MySQL, PostgreSQL or Oracle). The application supports both localhost and Local Network (Wi-Fi) connections, providing a tree-view explorer to navigate database schemas, including tables, views, and stored procedures.
+  <br><br>
+  Performance note: There is higher latency when opening a connection through a local network
 </p>
 
 ## Project Functionalities
-- Connect to several DBMS at the same time
-- Close the connection to a DBMS
-- Execute queries
-- Migrate a database from one DBMS to another
-- View databases with their tables, views, and stored procedures
+### **Universal Connectivity**
+- **Multi-Engine Support:** Establish and maintain active connections to several different DBMS concurrently
+- **Network Versatility:** Supports local machine connections and remote access over a shared Wi-Fi network
+
+### **Schema Explotarion**
+- **Object Explorer:** View a hierarchical tree-view of all accessible databases
+- **Metadata Inspection:** Drill down into specific Tables, Views, and Stored Procedures for any active connection
+
+### **Query and Migration Engine**
+- **Context-Aware Execution:** Execute queries by selecting the specific connection node needed in the UI
+- **Database Migration:** Automates the transfer of entire schemas and data from one DBMS provider to another
+- **Business Logic Layer:** Utilizes the "ReglasDeNegocio" library for standardized data conversion and query translation across platforms
 
 ## Technologies used
 - C#
