@@ -16,20 +16,24 @@
 
 ## Descripción
 <p>
-  Esta aplicación, creada utilizando C#, permite a un usuario conectarse a varios Sistemas Gestores de Bases de Datos (SGBD), donde pueden visualizar las bases de datos, 
-  tablas, vistas y procedimientos almacenados a los cuales tienen acceso. Es posible ejecutar queries en estos diversos SGBD, debe dar clic sobre el nodo de la conexión que 
-  desea utilizar para que el query se ejecute en la conexión correcta, además de migrar una base de datos de un SGBD a otro. La librería en C# "ReglasDeNegocio" contiene 
-  clases con los distintos queries o conversiones necesarias para cada SGBD distinto. La conexión a cada SGBD se agrega al selección el servidor, información de inicio de 
-  sesión del usuario y la ruta de la base de datos, en el caso de conexiones a Firebase. No necesariamente debe ser una conexión localhost, puede ser una conexión en una red 
-  Wi-Fi local, aunque el tiempo de carga es más lento que una conexión por localhost.
+  Esta es una herramienta robusta de gestión y migración de bases de datos desarrollada en C#. Sirve como un hub central para que los desarrolladores interactúen con múltiples sistemas de gestión de bases de datos (SGBD) simultáneamente. Esta aplicación cuenta con un motor de migración personalizado ubicado en la biblioteca "ReglasDeNegocio". Esta biblioteca gestiona la lógica de la traducción de consultas y tipos de datos entre diferentes motores de bases de datos (de Microsoft SQL Server hacia Firebird, MySQL, PostgreSQL u Oracle). La aplicación admite conexiones locales y de red local (Wi-Fi), y proporciona un explorador de vista de árbol para navegar por los esquemas de bases de datos, incluyendo tablas, vistas y procedimientos almacenados.
+  <br><br>
+  Nota de rendimiento: Hay mayor latencia al abrir una conexión a través de una red local
 </p>
 
 ## Funcionalidades del proyecto
-- Conectarse a varios SGBD al mismo tiempo
-- Cerrar la conexión a un SGBD
-- Ejecutar queries
-- Migrar bases de datos de un SGBD a otro
-- Obtener y ver bases de datos junto con sus tablas, vistas y procedimientos almacenados
+### **Conectividad Universal**
+- **Compatibilidad con Múltiples Motores:** Establece y mantiene conexiones activas con varios SGBD diferentes simultáneamente
+- **Versatilidad de Red:** Admite conexiones locales y acceso remoto a través de una red Wi-Fi compartida
+
+### **Explorador de Esquemas**
+- **Explorador de Objetos:** Visualice una vista de árbol jerárquica de todas las bases de datos accesibles
+- **Inspección de Metadatos:** Explore en profundidad tablas, vistas y procedimientos almacenados específicos para cualquier conexión activa
+
+### **Motor de Consultas y Migración**
+- **Ejecución Contextual:** Ejecute consultas seleccionando el nodo de conexión específico necesario en la interfaz de usuario
+- **Migración de Bases de Datos:** Automatiza la transferencia de esquemas y datos completos de un proveedor de SGBD a otro
+- **Capa de Lógica de Negocio:** Utiliza la biblioteca "Reglas de negocio" para la conversión de datos y la traducción de consultas estandarizadas en diferentes plataformas
 
 ## Tecnologías utilizadas
 - C#
